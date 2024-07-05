@@ -300,7 +300,7 @@ header .navbar {
 </head>
 <body>
 <header>
-      <nav class="navbar">
+    <nav class="navbar">
         <a class="logo" href="#">UNAH-CURLP <span>RRHH</span></a>
         <ul class="menu-links">
           <span id="close-menu-btn" class="material-symbols-outlined">close</span>
@@ -311,8 +311,8 @@ header .navbar {
           <li><a href="/dashboard">Dashboard</a></li>
         </ul>
         <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
-      </nav>
-    </header>
+    </nav>
+</header>
     <div class="container">
         <div class="forms">
             <div class="form login">

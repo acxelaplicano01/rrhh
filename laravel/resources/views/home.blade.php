@@ -192,7 +192,7 @@
 <body>
   <header>
     <nav class="navbar">
-      <a class="logo" href="#">UNAH-CURLP <span>RRHH</span></a>
+      <a class="logo" href="#">UNAH-Choluteca <span>RRHH</span></a>
       <ul class="menu-links">
         <span id="close-menu-btn" class="material-symbols-outlined">close</span>
         <li><a href="#">Home</a></li>

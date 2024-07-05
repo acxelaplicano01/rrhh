@@ -27,6 +27,9 @@
     <script src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.colVis.min.js"></script>
     <!-- Iconscout Link For Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     <!-- estilos del menu -->
     <style>
         /* Google Fonts Import Link */
@@ -257,7 +260,7 @@
             object-fit: cover;
             border-radius: 16px;
             margin: 0 14px 0 12px;
-            background: #fff;
+            background: #1967b1;
             transition: all 0.5s ease;
         }
 
@@ -397,15 +400,15 @@
         .home-section nav .profile-details {
             display: flex;
             align-items: center;
-            background: #f8f8f8;
-            border: 2px solid #EFEEF1;
+            background: fff;
+            border: 2px solid #fff;
             border-radius: 6px;
             height: 50px;
             min-width: 190px;
-            padding: 0 15px 0 2px;
+            padding: 0 15px 0 15px;
         }
 
-        nav .profile-details img {
+       /* nav .profile-details img {
             height: 40px;
             width: 40px;
             border-radius: 6px;
@@ -424,7 +427,7 @@
             font-size: 25px;
             color: #000;
         }
-
+*/
 
 
 
@@ -1601,16 +1604,17 @@
                 </ul>
             </li>
             <li>
+                <!-- PERFIL ABAJO DEL MENU
                 <div class="profile-details">
                     <div class="profile-content">
-                        <img src="https://cdn-icons-png.flaticon.com/512/9815/9815472.png" alt="profileImg">
+                        <img src="https://static.vecteezy.com/system/resources/previews/007/409/974/non_2x/people-icon-design-avatar-icon-person-icons-people-icons-are-set-in-trendy-line-style-user-icon-set-vector.jpg" alt="perfil">
                     </div>
                     <div class="name-job">
-                        <div class="profile_name">Usuario</div>
-                        <div class="job">Recursos Humanos</div>
+                        <div class="profile_name"></div>
+                        <div class="job"></div>
                     </div>
                     <a href="/"><i class='bx bx-log-out'></i></a>
-                </div>
+                </div> -->
             </li>
         </ul>
     </div>
@@ -1625,8 +1629,36 @@
                 <i class='bx bx-search'></i>
             </div>
             <div class="profile-details">
+            
 
-                
+            <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
+<span class="sr-only">Open user menu</span>
+<img class="w-8 h-8 rounded-full" src="https://static.vecteezy.com/system/resources/previews/007/409/974/non_2x/people-icon-design-avatar-icon-person-icons-people-icons-are-set-in-trendy-line-style-user-icon-set-vector.jpg" alt="user photo">
+</button>
+
+<!-- Dropdown menu -->
+<div id="dropdownAvatar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+    <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+      <div>Acxel Aplicano</div>
+      <div class="font-medium truncate">acxel.aplicano@unah.hn</div>
+    </div>
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUserAvatarButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      </li>
+    </ul>
+    <div class="py-2">
+      <a href="/login" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+    </div>
+</div>
+
+            
 
             </div>
         </nav>
